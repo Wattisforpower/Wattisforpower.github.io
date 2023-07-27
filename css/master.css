@@ -1,0 +1,90 @@
+:root {
+    --Gold-Background-Colour: Aqua; /* Redefined colour */
+    --Green-Background-Colour : #01480f;
+    --Leckerli-One : "Leckerli One", sans-serif;
+    --Display-Size: clamp(10px, 2vw, 50px);
+}
+
+
+* {
+    font-family: "Nunito", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+.Navigation_Bar {
+    margin-top: -1vh;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    height: 5vh;
+}
+
+.Navigation {
+    background-color: var(--Gold-Background-Colour);
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+}
+
+.Navigation a {
+    float: left;
+    font-size: 1.6vh;
+    color: black;
+    background-color: var(--Gold-Background-Colour);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Product_Dropdown {
+    float: left;
+    overflow: hidden;
+    background-color: var(--Gold-Background-Colour);
+}
+
+.Product_Dropdown .PD_Btn {
+    font-size: 1.6vh;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.Navigation a:hover, .Product_Dropdown:hover .PD_Btn {
+    color: white;
+    background-color: var(--Green-Background-Colour);
+}
+
+.PD_Content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.PD_Content a {
+    float: none;
+    color: black;
+    padding: 1.2vh 1.6vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.PD_Content a:hover {
+    background-color: var(--Green-Background-Colour);
+}
+
+.Product_Dropdown:hover .PD_Content {
+    display: block;
+}
