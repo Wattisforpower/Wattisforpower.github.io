@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Barrett</title>
+    <title>Ethan Barrett | 3rd Year Project</title>
     
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="/css/PageCss/PageMain.css>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/PageCss/PageMain.css>
     <!-- Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 
@@ -43,13 +43,7 @@
 </head>
 <body>
     <section class="Navigation_Bar">
-        <div include-html="/Pages/navigationbar.html"></div>
-    </section>
-
-    <section class="MainBody">
-      <div class="Coverslider">
-        
-      </div>
+        <div include-html="../Pages/navigationbar.html"></div>
     </section>
 
 
